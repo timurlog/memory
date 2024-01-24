@@ -64,7 +64,7 @@ body {
   transform: rotateY(0deg);
 }
 .memory .memory-content .memory-cards .memory-card .back-flip {
-  animation: backflip 1.5s forwards;
+  animation: backflip 1s forwards;
 }
 .memory .memory-content .memory-cards .memory-card .card-front {
   display: block;
@@ -72,7 +72,7 @@ body {
   transform: rotateY(90deg);
 }
 .memory .memory-content .memory-cards .memory-card .front-flip {
-  animation: frontflip 1.5s forwards;
+  animation: frontflip 1s forwards;
 }
 .memory .memory-content .memory-cards .memory-card img {
   height: 150px;
@@ -99,7 +99,7 @@ body {
 }
 .memory .memory-content .memory-cards .done {
   cursor: not-allowed;
-  animation: done 1.5s forwards;
+  animation: done 1s forwards;
 }
 @keyframes done {
   0% {

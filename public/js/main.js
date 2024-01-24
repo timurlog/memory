@@ -22,6 +22,7 @@ let cards = document.querySelectorAll('.memory-card');
 let finishDisplay = document.querySelector('.finishgame');
 let gameDisplay = document.querySelector('.memory');
 let playAgainBtn = document.querySelector('#playAgain');
+let flipcardSfx = new Audio('./public/assets/music/cardflip-sfx.wav');
 
 function checkAll() {
     cards = document.querySelectorAll('.memory-card');
@@ -52,6 +53,8 @@ function userSelection(x) {
         x.classList.add('active');
         x.firstElementChild.classList.add('back-flip');
         x.lastElementChild.classList.add('front-flip');
+        flipcardSfx.volume = 0.35;
+        flipcardSfx.play();
     }
 }
 
@@ -92,7 +95,7 @@ function checkFinish() {
                 i = 0
             }
         });
-    }, 4000);
+    }, 6000);
 }
 
 cards.forEach(card => {
