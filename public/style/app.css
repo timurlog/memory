@@ -98,15 +98,40 @@ body {
   }
 }
 .memory .memory-content .memory-cards .done {
-  opacity: 35%;
   cursor: not-allowed;
+  animation: done 1.5s forwards;
+}
+@keyframes done {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 35%;
+  }
 }
 
-/* ######### RESPONSIVE ######### */
-/* ### SMARTPHONE ### */
-/* ### TABLET ### */
-/* ### DESKTOP ### */
-/* ### BIG DESKTOP ### */
+.finishgame {
+  height: 100vh;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.finishgame .finishgame-content h1 {
+  color: #4D7EA8;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.finishgame .finishgame-content p {
+  color: #B6C2D9;
+  font-size: 24px;
+  text-align: center;
+}
+
 /* ########### FOOTER ########### */
 /* ######### RESPONSIVE ######### */
 /* ### SMARTPHONE ### */

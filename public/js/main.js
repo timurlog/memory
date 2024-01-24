@@ -19,6 +19,9 @@ function randomCards(array) {
 }
 
 let cards = document.querySelectorAll('.memory-card');
+let finishDisplay = document.querySelector('.finishgame');
+let gameDisplay = document.querySelector('.memory');
+let playAgainBtn = document.querySelector('#playAgain');
 
 function checkAll() {
     cards = document.querySelectorAll('.memory-card');
@@ -74,10 +77,35 @@ function checkSelection() {
     }
 }
 
+function checkFinish() {
+    setTimeout(() => {
+        cards = document.querySelectorAll('.memory-card');
+        let i = 0;
+        cards.forEach(card => {
+            if (card.classList.contains('done')) {
+                i += 1
+            }
+    
+            if (i == 16) {
+                gameDisplay.style.display = 'none'
+                finishDisplay.style.display = 'flex'
+                i = 0
+            }
+        });
+    }, 4000);
+}
+
 cards.forEach(card => {
     card.addEventListener('click', () => {
         checkAll();
         userSelection(card);
         checkSelection();
-    })
+        checkFinish();
+    });
 });
+
+// playAgainBtn.addEventListener('click', () => {
+//     finishDisplay.style.display = 'none';
+//     gameDisplay.style.display = 'flex';
+
+// });
