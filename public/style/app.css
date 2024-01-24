@@ -120,16 +120,36 @@ body {
   justify-content: center;
   align-items: center;
 }
+.finishgame .finishgame-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .finishgame .finishgame-content h1 {
   color: #4D7EA8;
   font-size: 50px;
   text-align: center;
-  margin-bottom: 25px;
 }
-.finishgame .finishgame-content p {
-  color: #B6C2D9;
-  font-size: 24px;
+.finishgame .finishgame-content button {
+  color: #4D7EA8;
   text-align: center;
+  font-family: monospace;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: 2px solid #B6C2D9;
+  background: #272931;
+  box-shadow: 3px 3px #B6C2D9;
+  cursor: pointer;
+  margin: 35px 0;
+}
+.finishgame .finishgame-content button:hover {
+  background: #121317;
+}
+.finishgame .finishgame-content button:active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
 }
 
 /* ########### FOOTER ########### */

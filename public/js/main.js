@@ -104,8 +104,4 @@ cards.forEach(card => {
     });
 });
 
-// playAgainBtn.addEventListener('click', () => {
-//     finishDisplay.style.display = 'none';
-//     gameDisplay.style.display = 'flex';
-
-// });
+playAgainBtn.addEventListener('click', function(){location.reload()});
