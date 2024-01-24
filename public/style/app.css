@@ -1,47 +1,117 @@
 /* ########### FONTS ############ */
-
-
+@font-face {
+  font-family: "";
+  src: url("../assets/fonts/");
+}
 /* ############ BODY ############  */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    min-width: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  min-width: 0;
 }
 
 body {
-    background-color: #FFFFFF;
-    font-family: Arial, Helvetica, sans-serif;
+  background-color: #272932;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* ########### HEADER ########### */
-
-
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+/* ### TABLET ### */
+/* ### DESKTOP ### */
+/* ### BIG DESKTOP ### */
 /* ############ MAIN ############ */
-
-
-/* ########### FOOTER ########### */
-
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+/* ### TABLET ### */
+/* ### DESKTOP ### */
+/* ### BIG DESKTOP ### */
+/* ### SECTION MEMORY ### */
+.memory {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.memory .memory-content {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.memory .memory-content .memory-cards {
+  height: 690px;
+  width: 554.52px;
+  gap: 30px;
+  display: grid;
+  grid-template: "a b c d" 150px;
+}
+.memory .memory-content .memory-cards .memory-card {
+  cursor: pointer;
+  height: 150px;
+  width: 116.13px;
+  display: flex;
+}
+.memory .memory-content .memory-cards .memory-card .card-backside {
+  display: block;
+  position: absolute;
+  transform: rotateY(0deg);
+}
+.memory .memory-content .memory-cards .memory-card .back-flip {
+  animation: backflip 1.5s forwards;
+}
+.memory .memory-content .memory-cards .memory-card .card-front {
+  display: block;
+  position: absolute;
+  transform: rotateY(90deg);
+}
+.memory .memory-content .memory-cards .memory-card .front-flip {
+  animation: frontflip 1.5s forwards;
+}
+.memory .memory-content .memory-cards .memory-card img {
+  height: 150px;
+  width: 116.13px;
+}
+@keyframes backflip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+@keyframes frontflip {
+  0% {
+    transform: rotateY(90deg);
+  }
+  25% {
+    transform: rotateY(90deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+.memory .memory-content .memory-cards .done {
+  opacity: 35%;
+  cursor: not-allowed;
+}
 
 /* ######### RESPONSIVE ######### */
 /* ### SMARTPHONE ### */
-@media (max-width: 576px) {
-
-}
-
 /* ### TABLET ### */
-@media (min-width: 577px) and (max-width: 768px) {
-
-}
-
 /* ### DESKTOP ### */
-@media (min-width: 769px) and (max-width: 1024px) {
-
-}
-
 /* ### BIG DESKTOP ### */
-@media (min-width: 1025px) {
+/* ########### FOOTER ########### */
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+/* ### TABLET ### */
+/* ### DESKTOP ### */
+/* ### BIG DESKTOP ### */
 
-}
+/*# sourceMappingURL=app.css.map */
